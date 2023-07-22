@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe</title>
-</head>
-<body>
-    <script src="app.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- * Typography -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- * CSS -->
+		<link rel="stylesheet" href="css/main.css" />
+		<title>Tic-Tac-Toe</title>
+	</head>
+	<body>
+		<header>Tic-Tac-Toe</header>
+		<div class="grid" id="gameboard">
+            <!-- <li class="grid--2 cell square">X</li>
+			<li class="grid--3 cell square">O</li>
+			<li class="grid--1 cell square">X</li>
+			<li class="grid--4 cell square">X</li>
+			<li class="grid--5 cell square">X</li>
+			<li class="grid--6 cell square">O</li>
+			<li class="grid--7 cell square">X</li>
+			<li class="grid--8 cell square">O</li>
+			<li class="grid--9 cell square">X</li> -->
+		</div>
+        <div class="input-container">
+            <input type="text" id="player1" placeholder="Player1 Name">
+            <input type="text" id="player2" placeholder="Player2 Name">
+        </div>
+        <div class="button-container">
+            <button class="button" id="start-button">Start Game</button>
+            <button class="button">Restart gameboard</button>
+
+        </div>
+        <div id="messag"></div>
+        <div id="result-display"></div>
+		<script src="app.js"></script>
+	</body>
 </html>

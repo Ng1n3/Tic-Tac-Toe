@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  max-width: 144rem;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  background-color: #0e2954;
+  color: #fff;
+}
+
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+header {
+  font-size: 8rem;
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 10rem);
+  width: 40rem;
+  grid-gap: 1rem;
+  margin: 2rem auto;
+}
+
+.cell {
+  border: 2px solid #fff;
+  padding: 1rem;
+  font-size: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1f6e8c;
+  font-weight: 500;
+  -webkit-transition: font-size 200ms ease-out;
+  transition: font-size 200ms ease-out;
+}
+.cell:hover {
+  cursor: pointer;
+  font-size: 2.7rem;
+}
+
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.button-container .button {
+  width: 25rem;
+  height: 5rem;
+  font-size: 2rem;
+  background-color: #0e2954;
+  border: 2px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4rem auto;
+  -webkit-transition: font-size 300ms ease-in-out;
+  transition: font-size 300ms ease-in-out;
+}
+.button-container .button:hover {
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.input-container {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+.input-container input {
+  width: 25rem;
+  height: 3rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
