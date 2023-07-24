@@ -130,3 +130,22 @@ header {
   padding: 1rem;
   font-size: 1.4rem;
 }
+
+.message {
+  width: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem auto;
+  border-radius: 2px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1.5rem;
+  border: 1px solid #fff;
+}
